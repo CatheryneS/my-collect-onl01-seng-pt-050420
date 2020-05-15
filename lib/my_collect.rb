@@ -4,8 +4,8 @@ def my_collect(array)
   i = 0 
   new_arr = []
   while i < array.length 
-  binding.pry
     new_arr << yield(array)
+    binding.pry
     i += 1
   end
   new_arr
